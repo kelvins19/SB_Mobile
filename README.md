@@ -17,7 +17,15 @@ The scenario for this test is to buy the following product
 **Needed Application/Device:**
 - IntelliJ IDEA
 - Android Emulator / Android Device
+
+    **Used Emulator Spec:**
+    - Device: Pixel 3 (1080x1920)
+    - OS: Android 10(Q) - API 29
 - Android Studio with Android SDK
+
+**This Project is been worked on:**
+- Device: iMac 2020 Intel Core i5
+- OS: MacOS Ventura 13.0.1
 
 ## How to do initial setup
 1. Install Java by running this command in the terminal `brew cask install adoptopenjdk8`
@@ -27,13 +35,13 @@ The scenario for this test is to buy the following product
 5. Install Appium by running this command in the terminal `npm install -g appium`
 6. Install maven3 by running this command in the terminal `brew install maven`
 7. Add this configuration in your bash or zshrc file, change the username with yours
-> export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home 
+```
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home 
+export ANDROID_HOME=/Users/{username}/Library/Android/sdk 
+export PATH="${ANDROID_HOME}/tools:${PATH}" export PATH="${ANDROID_HOME}/emulator:${PATH}"
+export PATH="${ANDROID_HOME}/platform-tools:${PATH}
+```
 
-> export ANDROID_HOME=/Users/{username}/Library/Android/sdk 
-
-> export PATH="${ANDROID_HOME}/tools:${PATH}" export PATH="${ANDROID_HOME}/emulator:${PATH}" 
-
-> export PATH="${ANDROID_HOME}/platform-tools:${PATH}
 8. Restart your mac computer
 
 ## How to setup the project and run the scenario
@@ -43,7 +51,9 @@ The scenario for this test is to buy the following product
 4. Run `mvn clean install`
 5. Run the Android Emulator and make sure this [apk](https://github.com/saucelabs/my-demo-app-android/releases/download/1.0.13/mda-1.0.13-15.apk) is already installed in the emulator
 6. In the Capabilities.java file, change the device name to your device name, you can get the name by running this command `adb devices`
-
+```
+capabilities.setCapability("deviceName", "{DEVICE_NAME_HERE}");
+```
 <img width="331" alt="Screenshot 2023-01-05 at 11 46 52" src="https://user-images.githubusercontent.com/38350074/210697336-5321cc75-07d1-46f7-8532-dea6d71bef96.png">
 
 <img width="1196" alt="Screenshot 2023-01-05 at 11 45 50" src="https://user-images.githubusercontent.com/38350074/210697502-f6bdb35d-3bc1-4eda-9874-6f7b2ec48225.png">
