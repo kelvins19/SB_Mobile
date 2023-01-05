@@ -47,6 +47,7 @@ The scenario for this test is to buy the following product
 <img width="331" alt="Screenshot 2023-01-05 at 11 46 52" src="https://user-images.githubusercontent.com/38350074/210697336-5321cc75-07d1-46f7-8532-dea6d71bef96.png">
 
 <img width="1196" alt="Screenshot 2023-01-05 at 11 45 50" src="https://user-images.githubusercontent.com/38350074/210697502-f6bdb35d-3bc1-4eda-9874-6f7b2ec48225.png">
+
 7. Go to this file `src/main/resources/features/scenarioTest.feature` and run the scenario by click the green play button 
 
 <img width="694" alt="Screenshot 2023-01-05 at 11 51 39" src="https://user-images.githubusercontent.com/38350074/210697903-c684e79a-2ebc-48b5-b2e5-58ee1ea6dd4a.png">
