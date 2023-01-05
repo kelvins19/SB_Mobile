@@ -16,12 +16,12 @@ The scenario for this test is to buy the following product
 
 **Needed Application/Device:**
 - IntelliJ IDEA
+- Android Studio with Android SDK
 - Android Emulator / Android Device
 
     **Used Emulator Spec:**
     - Device: Pixel 3 (1080x1920)
     - OS: Android 10(Q) - API 29
-- Android Studio with Android SDK
 
 **This Project is been worked on:**
 - Device: iMac 2020 Intel Core i5
